@@ -6,6 +6,8 @@ import { useEffect } from "react";
 import { nanoid } from "nanoid";
 import Navbar from "./Navbar";
 import Header from "./Header";
+import Main from "./Main";
+import Frontend from "./Frontend";
 import "./App.css";
 
 function App() {
@@ -15,6 +17,10 @@ function App() {
         <Navbar />
         <br />
         <Header />
+        <br />
+        <Main />
+        <br />
+        <Frontend />
       </Container>
     </div>
   );

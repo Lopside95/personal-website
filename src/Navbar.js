@@ -14,8 +14,14 @@ export default function Navbar() {
         </Col>
         <Col lg={5} className="buffer"></Col>
         <Col lg={3} className="site-links">
-          <h5 className="linkedIn-btn">LinkedIn</h5>
-          <h5 className="github-btn">Github</h5>
+          <h5 className="linkedIn-btn">
+            <a href="https://www.linkedin.com/in/james-wallington-2a122bb6/">
+              LinkedIn
+            </a>
+          </h5>
+          <h5 className="github-btn">
+            <a href="https://github.com/Lopside95">Github</a>
+          </h5>
         </Col>
       </Row>
     </Container>

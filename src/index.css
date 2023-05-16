@@ -70,13 +70,18 @@ h6 {
 .github-btn {
 }
 
+/* Beginning of Header */
+
 .header {
+  border: 1px solid black;
   display: flex;
   /* justify-content: flex-start; */
 }
 
 .prof-pic {
   margin-left: -20px;
+  align-self: center;
+
   /* padding: none; */
 }
 
@@ -99,4 +104,47 @@ h6 {
 
 .bio {
   text-align: left;
+}
+
+/* Beginning of Main */
+
+.education {
+  text-align: left;
+  padding: 10px;
+  box-shadow: 0 0 2px 0.5px rgb(0, 0, 0);
+  border-radius: 2%;
+  margin-right: 10px;
+}
+
+.technologies {
+  text-align: left;
+  box-shadow: 0 0 2px 0.5px rgb(0, 0, 0);
+  border-radius: 2%;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.work-experience {
+  text-align: left;
+  box-shadow: 0 0 2px 0.5px rgb(0, 0, 0);
+  border-radius: 2%;
+  padding: 10px;
+}
+
+li {
+  padding-bottom: 5px;
+}
+
+/* Start of Frontend  */
+
+.hero-app {
+  justify-content: space-between;
+}
+
+.hero-app-desc {
+  text-align: left;
+}
+
+.team-mem-img {
+  width: 200px;
 }
