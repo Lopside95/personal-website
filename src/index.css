@@ -27,29 +27,24 @@ h6 {
   font-family: "Inter", serif;
 }
 
-.container {
-  margin-right: 5vw;
+.main-container {
+  /* margin-right: 5vw; */
+  width: 100vw;
 }
 
 .navbar {
   border: 1px solid red;
-  display: flex;
-  /* width: 90vw; */
 }
 
 .home-btn {
+  align-self: flex-end;
 }
 
 .content-headings {
   display: flex;
-  flex-direction: row;
-  justify-content: bottom;
-}
-
-.site-links {
-  display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
+  align-self: flex-end;
+  margin-left: -30px;
 }
 
 .content-headings h5 {
@@ -57,5 +52,51 @@ h6 {
 }
 
 .frontend-btn {
-  /* width: fit-content; */
+}
+
+.copywriting-btn {
+}
+
+.site-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-self: flex-end;
+}
+
+.linkendIn-btn {
+}
+
+.github-btn {
+}
+
+.header {
+  display: flex;
+  /* justify-content: flex-start; */
+}
+
+.prof-pic {
+  margin-left: -20px;
+  /* padding: none; */
+}
+
+.prof-pic-img {
+  width: 90%;
+  height: auto;
+  /* padding: none; */
+  /* justify-self: flex-start; */
+  /* border: 1px solid black; */
+}
+
+.intro {
+  align-self: center;
+}
+
+.intro-text {
+  text-align: left;
+  align-self: flex-end;
+}
+
+.bio {
+  text-align: left;
 }
