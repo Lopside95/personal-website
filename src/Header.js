@@ -5,6 +5,7 @@ export default function Header() {
   return (
     <Container>
       <Row className="header">
+        {/* <Col lg={1}></Col> */}
         <Col lg={3} className="prof-pic">
           <img className="prof-pic-img" src="./tree-pic.jpg" alt="" />
         </Col>
@@ -17,14 +18,18 @@ export default function Header() {
             movies.
             <br /> <br /> But I do like coding.
           </p>
+        </Col>
+        <Col lg={3}></Col>
+      </Row>
+      <Row>
+        <Col lg={3}>
           <p className="bio">
             I’m a frontend developer with a background in copywriting and UX
             design. I’ve worked as a strategist and copywriter and have a
-            certificate in user-centred design but over time I’ve come to
-            realise that my desired role lies in coding.
+            certificate in user-centred design. Over time I’ve come to realise
+            that my desired role lies in coding.
           </p>
         </Col>
-        <Col lg={5}></Col>
       </Row>
     </Container>
   );

@@ -20,6 +20,7 @@ code {
 
 .App {
   /* background: rgb(220, 220, 220); */
+  width: 100vw;
 }
 
 h1,
@@ -32,7 +33,6 @@ h6 {
 }
 
 .main-container {
-  /* margin-right: 5vw; */
   width: 100vw;
 }
 
@@ -42,6 +42,9 @@ h6 {
 
 .home-btn {
   align-self: flex-end;
+}
+
+li::marker {
 }
 
 .content-headings {
@@ -85,7 +88,7 @@ h6 {
 /* Beginning of Header */
 
 .header {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   /* justify-content: flex-start; */
 }
@@ -121,24 +124,18 @@ h6 {
 /* Beginning of Main */
 
 .main {
-  background: whitesmoke;
+  /* background: whitesmoke; */
   display: flex;
   flex-direction: column;
   /* box-shadow: 0 0 2px 0.5px rgb(0, 0, 0); */
   border-radius: 2%;
-}
-
-.education {
-  text-align: left;
-  padding: 10px;
-  /* box-shadow: 0 0 2px 0.5px rgb(0, 0, 0);
-  border-radius: 2%; */
-  margin-right: 10px;
+  justify-content: center;
 }
 
 .tech-and-skills {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .technologies {
@@ -146,13 +143,31 @@ h6 {
   /* box-shadow: 0 0 2px 0.5px rgb(0, 0, 0);
   border-radius: 2%; */
   padding: 10px;
-  margin-right: 10px;
+  /* margin-right: 10px; */
+  box-shadow: 0 0 2px 0.5px rgb(0, 0, 0);
+  border-radius: 2%;
+}
+
+.skills {
+  text-align: left;
+  padding: 10px;
+  box-shadow: 0 0 2px 0.2px rgb(0, 32, 118);
+  /* box-shadow: 0 0 2px 0.5px rgb(0, 0, 0) none none none; */
+  border-radius: 2%;
 }
 
 .work-experience {
   text-align: left;
-  /* box-shadow: 0 0 2px 0.5px rgb(0, 0, 0);
-  border-radius: 2%; */
+  box-shadow: 0 0 2px 0.3px rgb(0, 0, 0);
+  border-radius: 2%;
+  padding: 10px;
+}
+
+.education {
+  margin-top: 10px;
+  text-align: left;
+  box-shadow: 0 0 2px 0.5px rgb(0, 0, 0);
+  border-radius: 2%;
   padding: 10px;
 }
 
@@ -161,6 +176,10 @@ li {
 }
 
 /* Start of Frontend  */
+
+.projects {
+  align-items: center;
+}
 
 .hero-app {
   justify-content: space-between;

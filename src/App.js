@@ -18,9 +18,9 @@ function App() {
         <br />
         <Header />
         <br />
-        <Main />
-        <br />
         <Frontend />
+        <br />
+        <Main />
       </Container>
     </div>
   );
