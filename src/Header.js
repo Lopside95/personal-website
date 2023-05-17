@@ -15,7 +15,7 @@ export default function Header() {
             <br />
             It’s been several years since I ate an olive and I don’t like horror
             movies.
-            <br /> But I do like coding.
+            <br /> <br /> But I do like coding.
           </p>
           <p className="bio">
             I’m a frontend developer with a background in copywriting and UX

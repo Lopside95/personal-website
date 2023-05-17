@@ -18,6 +18,10 @@ code {
     monospace;
 }
 
+.App {
+  /* background: rgb(220, 220, 220); */
+}
+
 h1,
 h2,
 h3,
@@ -64,10 +68,18 @@ h6 {
   align-self: flex-end;
 }
 
-.linkendIn-btn {
+.linkedIn-btn {
+  text-decoration: none;
 }
 
-.github-btn {
+.linkedIn-link {
+  /* text-decoration: none; */
+  color: black;
+}
+
+.github-link {
+  /* text-decoration: none; */
+  color: black;
 }
 
 /* Beginning of Header */
@@ -98,7 +110,7 @@ h6 {
 }
 
 .intro-text {
-  text-align: left;
+  text-align: center;
   align-self: flex-end;
 }
 
@@ -108,26 +120,39 @@ h6 {
 
 /* Beginning of Main */
 
+.main {
+  background: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  /* box-shadow: 0 0 2px 0.5px rgb(0, 0, 0); */
+  border-radius: 2%;
+}
+
 .education {
   text-align: left;
   padding: 10px;
-  box-shadow: 0 0 2px 0.5px rgb(0, 0, 0);
-  border-radius: 2%;
+  /* box-shadow: 0 0 2px 0.5px rgb(0, 0, 0);
+  border-radius: 2%; */
   margin-right: 10px;
+}
+
+.tech-and-skills {
+  display: flex;
+  flex-direction: row;
 }
 
 .technologies {
   text-align: left;
-  box-shadow: 0 0 2px 0.5px rgb(0, 0, 0);
-  border-radius: 2%;
+  /* box-shadow: 0 0 2px 0.5px rgb(0, 0, 0);
+  border-radius: 2%; */
   padding: 10px;
   margin-right: 10px;
 }
 
 .work-experience {
   text-align: left;
-  box-shadow: 0 0 2px 0.5px rgb(0, 0, 0);
-  border-radius: 2%;
+  /* box-shadow: 0 0 2px 0.5px rgb(0, 0, 0);
+  border-radius: 2%; */
   padding: 10px;
 }
 

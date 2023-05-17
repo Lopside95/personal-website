@@ -6,24 +6,36 @@ export default function Navbar() {
     <Container>
       <Row className="navbar">
         <Col lg={1} className="home-btn">
-          <h1 className="jw">JW</h1>
+          <h2 className="jw">JW</h2>
         </Col>
         <Col lg={3} className="content-headings">
-          <h5 className="frontend-btn">Frontend</h5>
-          <h5 className="copywriting-btn">Copywriting</h5>
+          <h6 className="frontend-btn">Frontend</h6>
+          <h6 className="copywriting-btn">Copywriting</h6>
         </Col>
         <Col lg={5} className="buffer"></Col>
         <Col lg={3} className="site-links">
-          <h5 className="linkedIn-btn">
-            <a href="https://www.linkedin.com/in/james-wallington-2a122bb6/">
-              LinkedIn
+          <Col>
+            <h6 className="linkedIn-btn">
+              <a
+                className="linkedIn-link"
+                href="https://www.linkedin.com/in/james-wallington-2a122bb6/"
+              >
+                LinkedIn
+              </a>
+            </h6>
+          </Col>
+          <h6 className="github-btn">
+            <a className="github-link" href="https://github.com/Lopside95">
+              Github
             </a>
-          </h5>
-          <h5 className="github-btn">
-            <a href="https://github.com/Lopside95">Github</a>
-          </h5>
+          </h6>
         </Col>
       </Row>
     </Container>
   );
+}
+
+{
+  /* <img className="linkedIn-icon" src="./linkedIn-icon.png" alt="" />
+<p>LinkedIn</p> */
 }
