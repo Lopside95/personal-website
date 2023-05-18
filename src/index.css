@@ -11,6 +11,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background: linear-gradient(to right, #ffffff 0%, #b5b5b5 50%, #898989 100%); */
+  /* background: rgb(136, 197, 136); */
+  background: linear-gradient(to right, #151514, #151514);
+  /* background: linear-gradient(to right, rgb(22, 21, 21), black); */
+  /* background: linear-gradient(to bottom, #ffffff 0%, #d5d5d5 50%, #e0e0e0 100%); */
 }
 
 code {
@@ -19,7 +24,8 @@ code {
 }
 
 .App {
-  /* background: rgb(220, 220, 220); */
+  /* background: rgb(245, 252, 254); */
+  /* background: rgb(246, 253, 255); */
   width: 100vw;
 }
 
@@ -34,14 +40,30 @@ h6 {
 
 .main-container {
   width: 100vw;
+  /* background: linear-gradient(to right, #ffffff 0%, #b5b5b5 50%, #898989 100%); */
 }
 
+.navbar-element {
+  top: 0;
+  position: sticky;
+}
 .navbar {
-  border: 1px solid red;
+  align-items: flex-end;
+  /* border: 1px solid red; */
+  height: 50px;
+  /* background: rgb(221, 240, 246); */
+  /* background: linear-gradient(to right, #b0f2ad, #bcbcef); */
+  /* background: linear-gradient(to right, #ffffff 0%, #d5d5d5 50%, #e0e0e0 100%); */
+  background: linear-gradient(to bottom, #ffffff 0%, #d5d5d5 50%, #e0e0e0 100%),
+    conic-gradient(at 50% 50%, #ff0000 0%, #0000ff 100%);
 }
 
 .home-btn {
   align-self: flex-end;
+}
+
+.jw {
+  /* align-self: flex-end; */
 }
 
 li::marker {
@@ -52,6 +74,7 @@ li::marker {
   justify-content: space-evenly;
   align-self: flex-end;
   margin-left: -30px;
+  padding-bottom: 5px;
 }
 
 .content-headings h5 {
@@ -59,6 +82,8 @@ li::marker {
 }
 
 .frontend-btn {
+  /* border-right: 1px solid rgb(77, 77, 228); */
+  padding-right: 15px;
 }
 
 .copywriting-btn {
@@ -69,6 +94,7 @@ li::marker {
   flex-direction: row;
   justify-content: space-evenly;
   align-self: flex-end;
+  padding-bottom: 5px;
 }
 
 .linkedIn-btn {
@@ -90,7 +116,19 @@ li::marker {
 .header {
   /* border: 1px solid black; */
   display: flex;
+  padding: 10px;
   /* justify-content: flex-start; */
+  /* background-color: white; */
+  /* background: linear-gradient(to bottom, #ffffff 0%, #d5d5d5 50%, #e0e0e0 100%),
+    conic-gradient(at 50% 50%, #888787 0%, #000000 100%); */
+  background: linear-gradient(
+    to bottom,
+    #c2c2c2,
+    #ffffff 10%,
+    #ffffff 50%,
+    #ffffff 90%,
+    #a7a7a7
+  );
 }
 
 .prof-pic {
@@ -113,8 +151,12 @@ li::marker {
 }
 
 .intro-text {
-  text-align: center;
+  text-align: left;
   align-self: flex-end;
+}
+
+.i-like-coding {
+  text-align: center;
 }
 
 .bio {
@@ -130,12 +172,14 @@ li::marker {
   /* box-shadow: 0 0 2px 0.5px rgb(0, 0, 0); */
   border-radius: 2%;
   justify-content: center;
+  background-color: white;
 }
 
 .tech-and-skills {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  /* background: linear-gradient(to right, #ffffff 0%, #b5b5b5 50%, #898989 100%); */
 }
 
 .technologies {
@@ -144,8 +188,12 @@ li::marker {
   border-radius: 2%; */
   padding: 10px;
   /* margin-right: 10px; */
-  box-shadow: 0 0 2px 0.5px rgb(0, 0, 0);
+  /* box-shadow: 0 0 2px 0.5px rgb(0, 0, 0); */
+  box-shadow: 0 0 3px 0.2px rgb(0, 32, 118);
+  /* background: linear-gradient(to right, #d1c4c4, #0000ff); */
+
   border-radius: 2%;
+  background: white;
 }
 
 .skills {
@@ -154,6 +202,9 @@ li::marker {
   box-shadow: 0 0 2px 0.2px rgb(0, 32, 118);
   /* box-shadow: 0 0 2px 0.5px rgb(0, 0, 0) none none none; */
   border-radius: 2%;
+  background-color: white;
+  /* background: linear-gradient(to right, #ffffff 0%, #b5b5b5 50%, #898989 100%); */
+  /* background: linear-gradient(to right, #ffffff 0%, #b5b5b5 50%, #898989 100%); */
 }
 
 .work-experience {
@@ -179,6 +230,7 @@ li {
 
 .projects {
   align-items: center;
+  background-color: white;
 }
 
 .hero-app {

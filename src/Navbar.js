@@ -3,14 +3,15 @@ import { Container, Row, Col, Nav } from "react-bootstrap";
 
 export default function Navbar() {
   return (
-    <Container>
+    <Container className="navbar-element">
       <Row className="navbar">
         <Col lg={1} className="home-btn">
           <h2 className="jw">JW</h2>
         </Col>
         <Col lg={3} className="content-headings">
-          <h6 className="frontend-btn">Frontend</h6>
-          <h6 className="copywriting-btn">Copywriting</h6>
+          <h6 className="frontend-btn">Frontend Developer</h6>
+          {/* <p> | </p> */}
+          <h6 className="copywriting-btn">Copywriter</h6>
         </Col>
         <Col lg={5} className="buffer"></Col>
         <Col lg={3} className="site-links">

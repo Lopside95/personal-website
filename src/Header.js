@@ -2,26 +2,27 @@ import React from "react";
 import { Container, Row, Col, Nav } from "react-bootstrap";
 
 export default function Header() {
+  function handleLoad() {}
+
   return (
     <Container>
       <Row className="header">
         {/* <Col lg={1}></Col> */}
-        <Col lg={3} className="prof-pic">
-          <img className="prof-pic-img" src="./tree-pic.jpg" alt="" />
-        </Col>
-        <Col lg={5} className="intro">
+        <Col lg={5} className="intro" onLoad={handleLoad}>
+          {/* Was thinking could be cool to have the this intro text appear on load
+          and then disappear after user click/scroll etc */}
           <p className="intro-text">
             My feelings toward long walks on the beach are varied and
             inconclusive.
             <br />
             It’s been several years since I ate an olive and I don’t like horror
             movies.
-            <br /> <br /> But I do like coding.
           </p>
+          <p className="i-like-coding">But I do like coding.</p>
         </Col>
-        <Col lg={3}></Col>
-      </Row>
-      <Row>
+        <Col lg={3} className="prof-pic">
+          <img className="prof-pic-img" src="./tree-pic.jpg" alt="" />
+        </Col>
         <Col lg={3}>
           <p className="bio">
             I’m a frontend developer with a background in copywriting and UX
@@ -30,7 +31,9 @@ export default function Header() {
             that my desired role lies in coding.
           </p>
         </Col>
+        <Col lg={3}></Col>
       </Row>
+      <Row></Row>
     </Container>
   );
 }
