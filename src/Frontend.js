@@ -9,11 +9,10 @@ export default function Frontend() {
           <h3 className="hero-app-heading">Hero Builder</h3>
         </Col>
         <Col className="hero-app-desc" lg={4}>
-          This app, loosely based on the video game <i>Dota 2</i>, allows users
-          to create a hero by through form selections. Calculations are made to
-          determine the values their selections have output and they can save
-          the hero as a team member, going on to create other heroes and
-          developing a team.
+          This project allows users to create a hero through form selections and
+          text inputs. Options synergise and differently and final values, such
+          as health, are calculated with a number of variables saved as a team
+          member on submission of the form.
         </Col>
         <Col className="hero-app-visual" lg={5}>
           <img className="team-mem-img" src="./team-mem.png" alt="" />

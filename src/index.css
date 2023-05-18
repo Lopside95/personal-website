@@ -2,6 +2,7 @@
 
 * {
   /* border: 1px solid green; */
+  /* background: black; */
 }
 
 body {
@@ -13,7 +14,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* background: linear-gradient(to right, #ffffff 0%, #b5b5b5 50%, #898989 100%); */
   /* background: rgb(136, 197, 136); */
-  background: linear-gradient(to right, #151514, #151514);
+  /* background: linear-gradient(to right, #151514, #151514); */
   /* background: linear-gradient(to right, rgb(22, 21, 21), black); */
   /* background: linear-gradient(to bottom, #ffffff 0%, #d5d5d5 50%, #e0e0e0 100%); */
 }
@@ -27,6 +28,15 @@ code {
   /* background: rgb(245, 252, 254); */
   /* background: rgb(246, 253, 255); */
   width: 100vw;
+  /* background-color: rgb(24, 24, 24); */
+  background: linear-gradient(
+    to bottom,
+    #c6c6c6,
+    #747474 10%,
+    #888888 50%,
+    #414141 90%,
+    #a7a7a7
+  );
 }
 
 h1,
@@ -49,6 +59,7 @@ h6 {
 }
 .navbar {
   align-items: flex-end;
+  flex-direction: row;
   /* border: 1px solid red; */
   height: 50px;
   /* background: rgb(221, 240, 246); */
@@ -59,11 +70,18 @@ h6 {
 }
 
 .home-btn {
-  align-self: flex-end;
+  align-self: flex-start;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
 }
 
 .jw {
   /* align-self: flex-end; */
+}
+
+.i-like-coding {
+  text-align: left;
 }
 
 li::marker {
@@ -121,14 +139,15 @@ li::marker {
   /* background-color: white; */
   /* background: linear-gradient(to bottom, #ffffff 0%, #d5d5d5 50%, #e0e0e0 100%),
     conic-gradient(at 50% 50%, #888787 0%, #000000 100%); */
-  background: linear-gradient(
+  /* background: linear-gradient(
     to bottom,
     #c2c2c2,
     #ffffff 10%,
     #ffffff 50%,
     #ffffff 90%,
     #a7a7a7
-  );
+  ); */
+  background: white;
 }
 
 .prof-pic {
@@ -153,10 +172,7 @@ li::marker {
 .intro-text {
   text-align: left;
   align-self: flex-end;
-}
-
-.i-like-coding {
-  text-align: center;
+  font-size: small;
 }
 
 .bio {
@@ -187,6 +203,7 @@ li::marker {
   /* box-shadow: 0 0 2px 0.5px rgb(0, 0, 0);
   border-radius: 2%; */
   padding: 10px;
+
   /* margin-right: 10px; */
   /* box-shadow: 0 0 2px 0.5px rgb(0, 0, 0); */
   box-shadow: 0 0 3px 0.2px rgb(0, 32, 118);
@@ -203,6 +220,7 @@ li::marker {
   /* box-shadow: 0 0 2px 0.5px rgb(0, 0, 0) none none none; */
   border-radius: 2%;
   background-color: white;
+  height: fit-content;
   /* background: linear-gradient(to right, #ffffff 0%, #b5b5b5 50%, #898989 100%); */
   /* background: linear-gradient(to right, #ffffff 0%, #b5b5b5 50%, #898989 100%); */
 }

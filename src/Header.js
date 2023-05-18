@@ -8,7 +8,19 @@ export default function Header() {
     <Container>
       <Row className="header">
         {/* <Col lg={1}></Col> */}
-        <Col lg={5} className="intro" onLoad={handleLoad}>
+        <Col lg={4}>
+          <p className="bio">
+            I’m a frontend developer with a background in copywriting and UX
+            design. I’ve worked as a strategist and copywriter and have a
+            certificate in user-centred design. Over time I’ve come to realise
+            that my desired role lies in coding.
+          </p>
+        </Col>
+        <Col lg={3} className="prof-pic">
+          <img className="prof-pic-img" src="./tree-pic.jpg" alt="" />
+        </Col>
+
+        <Col lg={3} className="intro" onLoad={handleLoad}>
           {/* Was thinking could be cool to have the this intro text appear on load
           and then disappear after user click/scroll etc */}
           <p className="intro-text">
@@ -19,17 +31,6 @@ export default function Header() {
             movies.
           </p>
           <p className="i-like-coding">But I do like coding.</p>
-        </Col>
-        <Col lg={3} className="prof-pic">
-          <img className="prof-pic-img" src="./tree-pic.jpg" alt="" />
-        </Col>
-        <Col lg={3}>
-          <p className="bio">
-            I’m a frontend developer with a background in copywriting and UX
-            design. I’ve worked as a strategist and copywriter and have a
-            certificate in user-centred design. Over time I’ve come to realise
-            that my desired role lies in coding.
-          </p>
         </Col>
         <Col lg={3}></Col>
       </Row>
