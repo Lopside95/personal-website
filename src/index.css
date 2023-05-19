@@ -28,15 +28,15 @@ code {
   /* background: rgb(245, 252, 254); */
   /* background: rgb(246, 253, 255); */
   width: 100vw;
-  /* background-color: rgb(24, 24, 24); */
-  background: linear-gradient(
+  background-color: rgb(24, 24, 24);
+  /* background: linear-gradient(
     to bottom,
     #c6c6c6,
     #747474 10%,
     #888888 50%,
     #414141 90%,
     #a7a7a7
-  );
+  ); */
 }
 
 h1,
@@ -189,6 +189,7 @@ li::marker {
   border-radius: 2%;
   justify-content: center;
   background-color: white;
+  background: black;
 }
 
 .tech-and-skills {
@@ -216,7 +217,7 @@ li::marker {
 .skills {
   text-align: left;
   padding: 10px;
-  box-shadow: 0 0 2px 0.2px rgb(0, 32, 118);
+  /* box-shadow: 0 0 2px 0.2px rgb(0, 32, 118); */
   /* box-shadow: 0 0 2px 0.5px rgb(0, 0, 0) none none none; */
   border-radius: 2%;
   background-color: white;
@@ -230,6 +231,7 @@ li::marker {
   box-shadow: 0 0 2px 0.3px rgb(0, 0, 0);
   border-radius: 2%;
   padding: 10px;
+  background: white;
 }
 
 .education {
@@ -238,6 +240,7 @@ li::marker {
   box-shadow: 0 0 2px 0.5px rgb(0, 0, 0);
   border-radius: 2%;
   padding: 10px;
+  background: white;
 }
 
 li {
@@ -261,4 +264,37 @@ li {
 
 .team-mem-img {
   width: 200px;
+}
+
+.row-break-1 {
+  height: 20px;
+  /* background: ; */
+}
+
+.break-1-col-right {
+  background: white;
+  height: 40px;
+  margin-top: -20px;
+  /* background: linear-gradient(); */
+  /* background: linear-gradient(
+    to right,
+    #565656 0%,
+    #a2a2a2 30%,
+    #aaaaaa 70%,
+    #626262 100%
+  ); */
+
+  /* border: 1px solid red; */
+}
+
+.main-break-1 {
+  height: 40px;
+}
+
+.main-break-1-row-1 {
+  height: 20px;
+}
+.main-break-1-row-2 {
+  height: 30px;
+  background-color: white;
 }
