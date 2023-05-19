@@ -6,8 +6,9 @@ export default function Main() {
     <Container>
       <Row>
         {/* <Col lg={1}></Col> */}
-        <Col className="main" lg={12}>
+        <Col className="main">
           <Row className="tech-and-skills">
+            <Col lg={0}></Col>
             <Col className="technologies" lg={2}>
               <ul className="tech-list">
                 <h6 className="tech-ul-heading">Technologies</h6>
@@ -32,8 +33,11 @@ export default function Main() {
                 <li>Intra-business communication</li>
               </ul>
             </Col>
-
-            <Col className="work-experience" lg={5}>
+            <Col className="main-break-2" lg={1}>
+              <Row className="main-break-2-row-1"></Row>
+              <Row className="main-break-2-row-2"></Row>
+            </Col>
+            <Col className="work-experience" lg={4}>
               <ul className="work-exp-list">
                 <h6>Work Experience</h6>
                 <li>Consultant, Copywriter | Serious Moonlight Consulting</li>
@@ -44,11 +48,13 @@ export default function Main() {
                 January - April 2019
               </ul>
             </Col>
+            <Col lg={1}></Col>
           </Row>
           {/* <Row className="main-break-1"></Row> */}
           <br />
           <Row>
-            <Col className="education" lg={8}>
+            <Col lg={2}></Col>
+            <Col className="education" lg={7}>
               <ul className="edu-list">
                 <h6>Education</h6>
                 <li>Learn React for Free | Scrimba</li>
@@ -68,6 +74,7 @@ export default function Main() {
                 </li>
               </ul>
             </Col>
+            <Col lg={3}></Col>
           </Row>
         </Col>
         {/* <Col lg={2}></Col> */}

@@ -18,11 +18,14 @@ function App() {
         <br />
         {/* instead of these being breaks they could be rows */}
         <Header />
-        <Row className="row-break-1"></Row>
-        <Col lg={2} className="break-1-col-right">
-          <h4>Projects</h4>
-        </Col>
-        <Col lg={10}></Col>
+        <Row className="row-break-1">
+          {/* <Col lg={2} style={{ width: "40px" }}></Col> */}
+          <Col lg={1}></Col>
+          <Col lg={2} className="break-1-col-right">
+            <h4>Projects</h4>
+          </Col>
+          <Col lg={7}></Col>
+        </Row>
         <Frontend />
         <br />
         <Main />

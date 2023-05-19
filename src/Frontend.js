@@ -8,13 +8,13 @@ export default function Frontend() {
         <Col lg={3}>
           <h3 className="hero-app-heading">Hero Builder</h3>
         </Col>
-        <Col className="hero-app-desc" lg={4}>
+        <Col className="hero-app-desc" lg={5}>
           This project allows users to create a hero through form selections and
           text inputs. Options synergise and differently and final values, such
           as health, are calculated with a number of variables saved as a team
           member on submission of the form.
         </Col>
-        <Col className="hero-app-visual" lg={5}>
+        <Col className="hero-app-visual" lg={4}>
           <img className="team-mem-img" src="./team-mem.png" alt="" />
         </Col>
       </Row>
