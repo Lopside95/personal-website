@@ -18,10 +18,10 @@ export default function Main() {
                 <li>Git</li>
               </ul>
             </Col>
-            <Col className="main-break-1" lg={2}>
+            {/* <Col className="main-break-1" lg={2}>
               <Row className="main-break-1-row-1"></Row>
               <Row className="main-break-1-row-2"></Row>
-            </Col>
+            </Col> */}
             <Col className="skills" lg={3}>
               <ul className="skills-list">
                 <h6 className="skills-ul-heading">Skills</h6>

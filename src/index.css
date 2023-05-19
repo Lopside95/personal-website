@@ -28,7 +28,7 @@ code {
   /* background: rgb(245, 252, 254); */
   /* background: rgb(246, 253, 255); */
   width: 100vw;
-  background-color: rgb(24, 24, 24);
+  /* background-color: rgb(24, 24, 24); */
   /* background: linear-gradient(
     to bottom,
     #c6c6c6,
@@ -189,7 +189,7 @@ li::marker {
   border-radius: 2%;
   justify-content: center;
   background-color: white;
-  background: black;
+  /* background: black; */
 }
 
 .tech-and-skills {

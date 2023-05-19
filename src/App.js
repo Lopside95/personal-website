@@ -18,11 +18,11 @@ function App() {
         <br />
         {/* instead of these being breaks they could be rows */}
         <Header />
-        <Row className="row-break-1"></Row>
+        {/* <Row className="row-break-1"></Row>
         <Col lg={2} className="break-1-col-right">
           <h4>Projects</h4>
         </Col>
-        <Col lg={10}></Col>
+        <Col lg={10}></Col> */}
         <Frontend />
         <br />
         <Main />
