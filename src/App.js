@@ -16,13 +16,9 @@ function App() {
       <Container className="main-container">
         <Navbar />
         <br />
-        {/* instead of these being breaks they could be rows */}
         <Header />
-        {/* <Row className="row-break-1"></Row>
-        <Col lg={2} className="break-1-col-right">
-          <h4>Projects</h4>
-        </Col>
-        <Col lg={10}></Col> */}
+        <Row style={{ height: "30px" }}></Row>
+
         <Frontend />
         <br />
         <Main />

@@ -45,7 +45,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Inter", serif;
+  font-family: "Inter", sans-serif;
 }
 
 .main-container {
@@ -172,7 +172,7 @@ li::marker {
 .intro-text {
   text-align: left;
   align-self: flex-end;
-  font-size: small;
+  font-size: 0.9rem;
 }
 
 .bio {
