@@ -8,7 +8,7 @@ export default function Header() {
     <Container>
       <Row className="header">
         {/* <Col lg={4}>
-          <p className="bio">
+          <p className="bio">`
             I’m a frontend developer with a background in copywriting and UX
             design. I’ve worked as a strategist and copywriter and have a
             certificate in user-centred design. Over time I’ve come to realise

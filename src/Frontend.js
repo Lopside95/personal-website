@@ -15,7 +15,12 @@ export default function Frontend() {
           member on submission of the form.
         </Col>
         <Col className="hero-app-visual" lg={5}>
-          <img className="team-mem-img" src="./team-mem.png" alt="" />
+          {/* <img className="team-mem-img" src="./team-mem.png" alt="" /> */}
+          {/* <img src="./hero-app.gif" alt="hero-app-gif" width="600px" /> */}
+          <video controls className="hero-app-vid">
+            <source src="./correct-zoom.mp4" type="video/mp4" />
+            Video tag not supported by browser
+          </video>
         </Col>
       </Row>
     </Container>

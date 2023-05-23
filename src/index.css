@@ -262,8 +262,12 @@ li {
   text-align: left;
 }
 
-.team-mem-img {
-  width: 200px;
+.hero-app-visual {
+  /* width: 200px; */
+}
+
+.hero-app-vid {
+  width: 500px;
 }
 
 .row-break-1 {
