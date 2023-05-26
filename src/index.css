@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-* {
-  /* border: 1px solid green; */
-  /* background: black; */
-}
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -12,11 +7,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background: linear-gradient(to right, #ffffff 0%, #b5b5b5 50%, #898989 100%); */
-  /* background: rgb(136, 197, 136); */
-  /* background: linear-gradient(to right, #151514, #151514); */
-  /* background: linear-gradient(to right, rgb(22, 21, 21), black); */
-  /* background: linear-gradient(to bottom, #ffffff 0%, #d5d5d5 50%, #e0e0e0 100%); */
 }
 
 code {
@@ -39,6 +29,10 @@ h6 {
 
 p {
   font-family: "EB Garamond", serif;
+}
+
+li {
+  padding-bottom: 5px;
 }
 
 .main-container {
@@ -84,7 +78,6 @@ p {
 }
 
 .frontend-btn {
-  /* border-right: 1px solid rgb(77, 77, 228); */
   padding-right: 15px;
 }
 
@@ -104,12 +97,10 @@ p {
 }
 
 .linkedIn-link {
-  /* text-decoration: none; */
   color: black;
 }
 
 .github-link {
-  /* text-decoration: none; */
   color: black;
 }
 
@@ -138,37 +129,24 @@ p {
 }
 
 .prof-pic-img {
-  width: 25%;
+  width: 200px;
   height: auto;
   margin-bottom: 50px;
-  /* padding: none; */
-  /* justify-self: flex-start; */
-  /* border: 1px solid black; */
 }
 
 .bio {
-  /* font-size: 17px; */
   font-size: 1.2rem;
   text-align: left;
   width: 720px;
 }
 
-/* Start of Frontend  */
-
-.projects {
-  /* margin-bottom: 100px; */
-}
+/* Beginning of Frontend  */
 
 .projects-heading {
   text-align: left;
   font-family: "EB Garamond", serif;
   margin-bottom: 50px;
 }
-/* 
-.projects {
-  align-items: center;
-  background-color: white;
-} */
 
 .hero-app {
   justify-content: space-between;
@@ -191,8 +169,8 @@ p {
   color: black;
 }
 
-.hero-app-visual {
-  /* width: 200px; */
+.hero-desc-text {
+  font-size: 20px;
 }
 
 .hero-app-vid {
@@ -207,7 +185,6 @@ p {
 }
 
 .technologies {
-  /* margin-top: 100px; */
   margin-bottom: 50px;
   align-items: center;
 }
@@ -279,84 +256,12 @@ p {
   margin-left: -35px;
 }
 
-/* Beginning of Main */
+/* Beginning of Footer */
 
-.main {
-  /* background: whitesmoke; */
-  display: flex;
-  flex-direction: column;
-  /* box-shadow: 0 0 2px 0.5px rgb(0, 0, 0); */
-  border-radius: 2%;
-  justify-content: center;
-  background-color: white;
-  /* background: black; */
+.footer {
+  margin-bottom: 50px;
 }
 
-.tech-and-skills {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  /* background: linear-gradient(to right, #ffffff 0%, #b5b5b5 50%, #898989 100%); */
-}
-
-.hero-desc-text {
-  font-family: "EB Garamond", serif;
-  font-size: 20px;
-}
-
-/* .technologies {
-} */
-
-/* .technologies {
+.contact-details {
   text-align: left;
-  box-shadow: 0 0 2px 0.5px rgb(0, 0, 0);
-  border-radius: 2%;
-  padding: 10px;
-
-  margin-right: 10px;
-  box-shadow: 0 0 2px 0.5px rgb(0, 0, 0);
-  box-shadow: 0 0 3px 0.2px rgb(0, 32, 118);
-  background: linear-gradient(to right, #d1c4c4, #0000ff);
-
-  border-radius: 2%;
-  background: white;
-} */
-
-/* .skills { */
-/* text-align: left;
-  padding: 10px;
-  box-shadow: 0 0 3px 0.2px rgb(0, 32, 118); */
-/* box-shadow: 0 0 2px 0.5px rgb(0, 0, 0) none none none; */
-/* border-radius: 2%; */
-/* border-radius: 5px; */
-
-/* background-color: white; */
-/* height: fit-content; */
-/* background: linear-gradient(to right, #ffffff 0%, #b5b5b5 50%, #898989 100%); */
-/* background: linear-gradient(to right, #ffffff 0%, #b5b5b5 50%, #898989 100%); */
-/* } */
-
-.work-experience {
-  text-align: left;
-  box-shadow: 0 0 3px 0.2px rgb(0, 32, 118);
-
-  /* box-shadow: 0 0 2px 0.3px rgb(0, 0, 0); */
-  border-radius: 5px;
-  padding: 10px;
-  background: white;
-}
-
-/* .education {
-  margin-top: 10px;
-  text-align: left;
-  box-shadow: 0 0 2px 0.5px rgb(0, 0, 0);
-  box-shadow: 0 0 3px 0.2px rgb(0, 32, 118);
-
-  border-radius: 5px;
-  padding: 10px;
-  background: white;
-} */
-
-li {
-  padding-bottom: 5px;
 }

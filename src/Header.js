@@ -14,7 +14,7 @@ export default function Header() {
             movies.
           </h2>
           <h1 className="i-like-text">But I do like coding</h1>
-          <img className="prof-pic-img" src="./tree-pic.jpg" alt="" />
+          <img className="prof-pic-img" src="./cv-picture.jpg" alt="" />
           <p className="bio">
             I’m James, a frontend developer with a background in copywriting and
             UX design. I’ve worked as a strategist and copywriter and have a
