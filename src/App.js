@@ -14,7 +14,7 @@ function App() {
         <Navbar />
         <br />
         <Header />
-        <Row style={{ height: "30px" }}></Row>
+        <Row style={{ height: "40px" }}></Row>
 
         <Frontend />
         <br />

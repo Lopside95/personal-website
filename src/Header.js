@@ -15,23 +15,22 @@ export default function Header() {
             that my desired role lies in coding.
           </p>
         </Col> */}
-        <Col lg={1}></Col>
-        <Col lg={5} className="intro">
-          <p className="intro-text">
-            My feelings toward long walks on the beach are varied and
-            inconclusive.
-            <br />
-            It’s been several years since I ate an olive and I don’t like horror
-            movies.
-          </p>
-          <p className="i-like-coding">But I do like coding.</p>
-        </Col>
-        <Col lg={1}></Col>
         <Col lg={3} className="prof-pic">
           <img className="prof-pic-img" src="./tree-pic.jpg" alt="" />
         </Col>
+        <Col lg={5} className="intro">
+          <p className="intro-text">
+            My feelings toward long walks on the beach are varied and
+            inconclusive. It’s been several years since I ate an olive and I
+            don’t like horror movies.
+          </p>
+          {/* <p className="i-like-coding">But I do like coding.</p> */}
+        </Col>
+        {/* <Col lg={1}></Col> */}
 
-        <Col lg={3}></Col>
+        <Col className="i-like-coding" lg={4}>
+          <h2 className="i-like-text">But I do like coding</h2>
+        </Col>
       </Row>
       <Row></Row>
     </Container>

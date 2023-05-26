@@ -81,7 +81,17 @@ h6 {
 }
 
 .i-like-coding {
+  display: flex;
+  flex-direction: row;
   text-align: left;
+  align-items: center;
+  font-size: 30px;
+}
+
+.i-like-text {
+  /* justify-self: center; */
+  /* align-content: center;
+  justify-content: center; */
 }
 
 li::marker {
@@ -134,7 +144,7 @@ li::marker {
 .header {
   /* border: 1px solid black; */
   display: flex;
-  padding: 10px;
+  /* padding: 10px; */
   /* justify-content: flex-start; */
   /* background-color: white; */
   /* background: linear-gradient(to bottom, #ffffff 0%, #d5d5d5 50%, #e0e0e0 100%),
@@ -172,7 +182,8 @@ li::marker {
 .intro-text {
   text-align: left;
   align-self: flex-end;
-  font-size: 0.9rem;
+  line-height: 1.8;
+  font-size: 23px;
 }
 
 .bio {
@@ -199,6 +210,11 @@ li::marker {
   /* background: linear-gradient(to right, #ffffff 0%, #b5b5b5 50%, #898989 100%); */
 }
 
+.hero-desc-text {
+  font-family: "EB Garamond", serif;
+  font-size: 20px;
+}
+
 .technologies {
   text-align: left;
   /* box-shadow: 0 0 2px 0.5px rgb(0, 0, 0);
@@ -217,19 +233,23 @@ li::marker {
 .skills {
   text-align: left;
   padding: 10px;
-  /* box-shadow: 0 0 2px 0.2px rgb(0, 32, 118); */
+  box-shadow: 0 0 3px 0.2px rgb(0, 32, 118);
   /* box-shadow: 0 0 2px 0.5px rgb(0, 0, 0) none none none; */
-  border-radius: 2%;
+  /* border-radius: 2%; */
+  border-radius: 5px;
+
   background-color: white;
-  height: fit-content;
+  /* height: fit-content; */
   /* background: linear-gradient(to right, #ffffff 0%, #b5b5b5 50%, #898989 100%); */
   /* background: linear-gradient(to right, #ffffff 0%, #b5b5b5 50%, #898989 100%); */
 }
 
 .work-experience {
   text-align: left;
-  box-shadow: 0 0 2px 0.3px rgb(0, 0, 0);
-  border-radius: 2%;
+  box-shadow: 0 0 3px 0.2px rgb(0, 32, 118);
+
+  /* box-shadow: 0 0 2px 0.3px rgb(0, 0, 0); */
+  border-radius: 5px;
   padding: 10px;
   background: white;
 }
@@ -237,8 +257,10 @@ li::marker {
 .education {
   margin-top: 10px;
   text-align: left;
-  box-shadow: 0 0 2px 0.5px rgb(0, 0, 0);
-  border-radius: 2%;
+  /* box-shadow: 0 0 2px 0.5px rgb(0, 0, 0); */
+  box-shadow: 0 0 3px 0.2px rgb(0, 32, 118);
+
+  border-radius: 5px;
   padding: 10px;
   background: white;
 }
@@ -256,6 +278,12 @@ li {
 
 .hero-app {
   justify-content: space-between;
+}
+
+.hero-app-heading {
+  margin-left: 0%;
+  text-align: left;
+  font-size: 30px;
 }
 
 .hero-app-desc {

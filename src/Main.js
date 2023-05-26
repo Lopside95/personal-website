@@ -43,7 +43,7 @@ export default function Main() {
           </Row>
           <br />
           <Row>
-            <Col className="education" lg={8}>
+            <Col className="education" lg={6}>
               <ul className="edu-list">
                 <h6>Education</h6>
                 <li>Learn React for Free | Scrimba</li>
@@ -51,7 +51,8 @@ export default function Main() {
                 <li>Front End Web Developer Nanodegree | Udacity</li>
                 <li>
                   National Certificate in Design Techniques – User-centred
-                  Design | Red & Yellow Creative School of Business
+                  Design | <br />
+                  Red & Yellow Creative School of Business
                 </li>
                 <li>
                   Struik PRH Creative Writing online short course | Penguin
