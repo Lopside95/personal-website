@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <Container className="main-container">
         <Navbar />
-        <br />
+        <Row style={{ height: "1em" }}></Row>
         <Header />
         <Row style={{ height: "100px" }}></Row>
         <Frontend />
