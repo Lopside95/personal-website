@@ -11,7 +11,6 @@ export default function Frontend() {
           <h3 className="hero-app-heading">Hero Builder</h3>
         </Row>
         <Row className="hero-app">
-          {/* <Col lg={1}></Col> */}
           <Col className="hero-app-desc" lg={5}>
             <p className="hero-desc-text">
               This project allows users to create a hero through form selections

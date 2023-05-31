@@ -17,8 +17,6 @@ export default function Navbar() {
           >
             JW
           </h2>
-          {/* <h6 className="frontend-btn">Frontend Developer</h6>
-          <h6 className="copywriting-btn">Copywriter</h6> */}
         </Col>
         <Col lg={3} className="content-headings">
           <h6 className="frontend-btn">Frontend Developer</h6>
