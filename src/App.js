@@ -66,16 +66,17 @@ function App() {
               This project allows users to create a hero through form selections
               and text inputs. Options synergise differently and final values,
               such as health, are calculated using a number of variables. Heroes
-              are submitted and saved to a team. The {""}
+              are submitted and saved to a team. The deployed {""}
               <a
                 className="hero-app-link"
-                href="https://github.com/Lopside95/create-hero"
+                href="https://lopside95.github.io/create-hero/"
                 target="_blank"
                 rel="noreferrer"
               >
                 Hero Builder {""}
               </a>
-              {""} and other project repositories are available {""}
+              {""} is available here. It and other project repositories are
+              available {""}
               <a
                 className="app-text-github-link"
                 href="https://github.com/Lopside95"
