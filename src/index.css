@@ -39,13 +39,14 @@ li::marker {
 .nav {
   width: 100%;
   top: 0;
-  position: sticky;
+  position: fixed;
   display: flex;
   flex-direction: row;
   box-shadow: 0 0 1px 1px;
   height: 3em;
   background: white;
   align-items: last baseline;
+  z-index: 1;
 }
 
 .jw {
@@ -65,7 +66,7 @@ li::marker {
 }
 
 .header {
-  padding: 1em 1em;
+  padding: 3em 1em;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -189,6 +190,12 @@ li::marker {
 
 .footer > p {
   line-height: 0.5em;
+}
+
+@media (max-width: 424px) {
+  .hero-app-vid {
+    padding-left: 0;
+  }
 }
 
 @media (min-width: 767px) {
