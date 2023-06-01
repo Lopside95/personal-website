@@ -46,6 +46,7 @@ li::marker {
   height: 3em;
   background: white;
   align-items: last baseline;
+  z-index: 1;
 }
 
 .jw {
