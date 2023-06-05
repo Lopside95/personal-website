@@ -136,7 +136,6 @@ function App() {
             <ul className="edu-list">
               <li>Learn React for Free | Scrimba</li>
               <li>The Complete Front-End Web Development Course | Udemy </li>
-              <li>Front End Web Developer Nanodegree | Udacity</li>
               <li>
                 National Certificate in Design Techniques – User-centred Design
                 | Red & Yellow Creative School of Business
