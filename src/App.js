@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Row, Col, Nav } from "react-bootstrap";
-
+import cvPicture from "./cvPicture.jpg";
+import heroAppVid from "./heroAppVid.mp4";
+import picOpt2 from "./picOpt2.jpg";
 import "./App.css";
 
 function App() {
@@ -47,7 +48,7 @@ function App() {
           horror movies.
         </p>
         <h4 className="like-coding">But I do like coding</h4>
-        <img className="prof-pic" src="./cv-picture.jpg" alt="" />
+        <img className="prof-pic" src={picOpt2} alt="" />
         <p className="bio">
           I’m James, a frontend developer with a background in copywriting and
           UX design. I’ve worked as a strategist and copywriter and have a
@@ -87,7 +88,7 @@ function App() {
               </a>
             </p>
             <video controls className="hero-app-vid">
-              <source src="./hero-app-vid.mp4" type="video/mp4" />
+              <source src={heroAppVid} type="video/mp4" />
               Video tag not supported by browser
             </video>
           </article>
