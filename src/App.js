@@ -16,7 +16,17 @@ function App() {
 
   const [hovered, setHovered] = useState(false);
 
-  const hoverEffect = () => {};
+  const hoverStyle = {
+    boxShadow: hovered ? "0 0 1px 1px #000" : "0 0 0 0 #FFF",
+  };
+
+  const hoverMouseEnter = () => {
+    setHovered(true);
+  };
+
+  const hoverMouseLeave = () => {
+    setHovered(false);
+  };
 
   return (
     <div className="App">
@@ -79,7 +89,7 @@ function App() {
         </p>
       </header>
       <main className="main">
-        <section className="projects">
+        <section className="dev-projects">
           <h2 className="projects-heading">Projects</h2>
           <article className="hero-app">
             <h3 className="hero-app-heading">Hero Builder</h3>
@@ -130,7 +140,13 @@ function App() {
           </article>
           <article className="short-stories">
             <h3>There's Always Time For a Short Story</h3>
-            <div className="story-text-img" onClick={toggleStory}>
+            <div
+              className="story-text-img"
+              onClick={toggleStory}
+              onMouseEnter={hoverMouseEnter}
+              onMouseLeave={hoverMouseLeave}
+              style={hoverStyle}
+            >
               {storyInfo ? (
                 <p className="story-text">
                   The brief charged us with developing a promotional event for

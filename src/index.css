@@ -118,7 +118,7 @@ li::marker {
   align-items: center;
 }
 
-.projects {
+.dev-projects {
   padding: 0 1em;
   max-width: 100%;
 }
@@ -149,16 +149,22 @@ li::marker {
   padding: 1em 1em;
 }
 
+.writing-and-strategy {
+  padding: 1em 1em;
+}
+
 .short-stories {
 }
 
 .story-text-img {
   cursor: pointer;
+  width: 24em;
+  padding: 0 1em;
 }
 
-.story-text-img:hover {
+/* .story-text-img:hover {
   box-shadow: 0 0 3px 1px black;
-}
+} */
 
 .stories-img {
   width: 300px;
