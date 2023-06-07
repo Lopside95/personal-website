@@ -42,11 +42,17 @@ li::marker {
   position: fixed;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   box-shadow: 0 0 1px 1px;
   height: 3em;
   background: white;
-  align-items: last baseline;
+  align-items: flex-end;
   z-index: 1;
+}
+
+.linkedin-and-git {
+  display: flex;
+  align-items: flex-end;
 }
 
 .jw {
@@ -63,6 +69,20 @@ li::marker {
 .github-link {
   color: black;
   font-size: 0.8em;
+}
+
+.dev-and-writer {
+  display: flex;
+}
+
+.dev-nav {
+  font-size: 0.9em;
+  padding-right: 0.5em;
+}
+
+.writer-nav {
+  font-size: 0.9em;
+  padding-right: 1em;
 }
 
 .header {
@@ -127,6 +147,25 @@ li::marker {
 .hero-app-vid {
   width: 24em;
   padding: 1em 1em;
+}
+
+.short-stories {
+}
+
+.story-text-img {
+  cursor: pointer;
+}
+
+.story-text-img:hover {
+  box-shadow: 0 0 3px 1px black;
+}
+
+.stories-img {
+  width: 300px;
+}
+
+.monkeyland-nutshell {
+  width: 300px;
 }
 
 .about {
@@ -221,6 +260,10 @@ li::marker {
     padding-left: 1.5em;
   }
 
+  .dev-and-writer {
+    padding-right: 3em;
+  }
+
   .hero-app {
     display: grid;
     grid-template-rows: 3;
@@ -247,6 +290,10 @@ li::marker {
 
 @media (min-width: 1300px) {
   .jw {
-    padding-left: 7em;
+    padding-left: 6em;
+  }
+
+  .dev-and-writer {
+    padding-right: 8em;
   }
 }
