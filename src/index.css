@@ -153,13 +153,31 @@ li::marker {
   padding: 1em 1em;
 }
 
-.short-stories {
+.writing-desc {
+  max-width: 500px;
+  text-align: left;
+  padding: 0 1em;
+}
+
+.stories-project {
+  padding-left: 1em;
+}
+
+.story-heading {
+  padding: 0.5em 1em;
+}
+
+.story-text {
+  padding: 0 1em;
+  max-width: 350px;
 }
 
 .story-text-img {
+  max-width: 300px;
   cursor: pointer;
-  width: 24em;
-  padding: 0 1em;
+  height: auto;
+  /* padding: 0 2em; */
+  text-align: left;
 }
 
 /* .story-text-img:hover {
@@ -167,7 +185,8 @@ li::marker {
 } */
 
 .stories-img {
-  width: 300px;
+  max-width: 300px;
+  height: auto;
 }
 
 .monkeyland-nutshell {
@@ -291,6 +310,22 @@ li::marker {
   .hero-app-vid {
     grid-area: 2/3/3/4;
     width: 40em;
+  }
+
+  .stories-project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    width: 100%;
+  }
+
+  .story-heading {
+    text-align: left;
+  }
+
+  .story-text-img {
+    width: 500px;
   }
 }
 

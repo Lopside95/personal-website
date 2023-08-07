@@ -18,6 +18,7 @@ function App() {
 
   const hoverStyle = {
     boxShadow: hovered ? "0 0 1px 1px #000" : "0 0 0 0 #FFF",
+    // opacity: hovered ? 0.8 : 1,
   };
 
   const hoverMouseEnter = () => {
@@ -77,15 +78,12 @@ function App() {
           <br /> It’s been several years since I ate an olive and I don’t like
           horror movies.
         </p>
-        <h4 className="like-coding">But I do like coding</h4>
+        <h4 className="like-coding">But I like coding and writing</h4>
         <img className="prof-pic" src={picOpt2} alt="" />
         <p className="bio">
-          I’m James, a frontend developer with a background in copywriting and
-          UX design. I’ve worked as a strategist and copywriter and have a
-          certificate in user-centred design, where my strength is in
-          information architecture. Over time I’ve come to realise that my
-          future lies in coding and last I year I began my journey into frontend
-          development.
+          I’m a frontend developer and copywriter. I’ve worked as a strategist
+          and have a certificate in user-centred design, where my strength is in
+          information architecture.
         </p>
       </header>
       <main className="main">
@@ -130,16 +128,18 @@ function App() {
           <article className="writing-intro">
             <h2 className="writing-heading">Strategy & Copywriting</h2>
             <p className="writing-desc">
-              One of my strengths I value most is storytelling. Storytelling is
-              ubiquitous – in strategy, in copy, in art, in experiences,
-              designed or otherwise – and the way I tell stories is through
-              writing. The challenge of finding effective ways to communicate
-              meaning and value, from the overarching narrative to diction and
-              sentence construction, is both engaging and immensely satisfying.
+              One of my strengths I value most is storytelling. No story exists
+              in isolation – they rely on past stories, needing to understand
+              and engage with them in order to be effectively communicated as
+              they act in concert with the narratives around them. Strategy lays
+              the foundation and is the driving force behind potent and
+              insightful communication.
             </p>
           </article>
-          <article className="short-stories">
-            <h3>There's Always Time For a Short Story</h3>
+          <article className="stories-project">
+            <h3 className="story-heading">
+              There's Always Time For a Short Story
+            </h3>
             <div
               className="story-text-img"
               onClick={toggleStory}
@@ -154,8 +154,8 @@ function App() {
                   of the common issues faced is a shortage of time. We realised
                   short stories – in truth these are vignettes – can be read
                   quickly and in any setting. During the promotion, stories were
-                  placed in places around the mall – on receipts, in elevators,
-                  and on limited edition packets.
+                  placed around the mall - on receipts, in elevators, and on
+                  limited edition packets.
                 </p>
               ) : (
                 <img className="stories-img" src={shortStories} alt="" />
@@ -165,6 +165,39 @@ function App() {
         </section>
         <article className="monkeyland">
           <h4>Copyediting for Monkeyland Primate Sanctuary</h4>
+          <p className="monkeyland-links">
+            Edited bodies of text on the Monkeyland website. These include
+            <a
+              className="nutshell"
+              href="https://www.monkeyland.co.za/in-a-nutshell_content_id_51"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              {""}
+              ‘Monkeyland In A Nutshell’
+            </a>
+            ,
+            <a
+              className="mission"
+              href="https://www.monkeyland.co.za/mission_content_id_48"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {""} 'Mission',{""}
+            </a>
+            {""} and {""}
+            <a
+              className="vision"
+              href="https://www.monkeyland.co.za/vision_content_id_16"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              'Vision'
+            </a>
+            .
+          </p>
         </article>
 
         <section className="about">
