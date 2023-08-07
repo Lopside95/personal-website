@@ -3,7 +3,7 @@ import { useState } from "react";
 import cvPicture from "./cvPicture.jpg";
 import heroAppVid from "./heroAppVid.mp4";
 import picOpt2 from "./picOpt2.jpg";
-import MonkeylandNutshell from "./MonkeylandNutshell.jpg";
+import monkeylandPic from "./monkeyland-pic.jpg";
 import shortStories from "./shortStories.jpeg";
 import "./App.css";
 
@@ -104,7 +104,7 @@ function App() {
               >
                 Hero Builder {""}
               </a>
-              {""} is available here. It and other project repositories are
+              {""} is available here. My Github project repositories are
               available {""}
               <a
                 className="app-text-github-link"
@@ -164,37 +164,29 @@ function App() {
           </article>
         </section>
         <article className="monkeyland">
-          <h4>Copyediting for Monkeyland Primate Sanctuary</h4>
+          <h4>Copy editing for Monkeyland Primate Sanctuary</h4>
+          <img className="monkeyland-pic" src={monkeylandPic} alt=""></img>
           <p className="monkeyland-links">
             Edited bodies of text on the Monkeyland website. These include
             <a
               className="nutshell"
-              href="https://www.monkeyland.co.za/in-a-nutshell_content_id_51"
+              href="https://www.monkeyland.co.za/page/monkeyland-in-a-nutshell"
               target="_blank"
               rel="noreferrer"
             >
               {" "}
               {""}
-              ‘Monkeyland In A Nutshell’
-            </a>
-            ,
-            <a
-              className="mission"
-              href="https://www.monkeyland.co.za/mission_content_id_48"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {""} 'Mission',{""}
+              Monkeyland In A Nutshell
             </a>
             {""} and {""}
             <a
               className="vision"
-              href="https://www.monkeyland.co.za/vision_content_id_16"
+              href="https://www.monkeyland.co.za/page/our-vision"
               target="_blank"
               rel="noreferrer"
             >
               {" "}
-              'Vision'
+              Our Vision
             </a>
             .
           </p>
@@ -241,7 +233,7 @@ function App() {
           <article className="education">
             <h3 className="edu-heading">Education</h3>
             <ul className="edu-list">
-              <li>Learn React for Free | Scrimba</li>
+              <li>Learn React with Bob Ziroll | Scrimba</li>
               <li>The Complete Front-End Web Development Course | Udemy </li>
               <li>
                 National Certificate in Design Techniques – User-centred Design

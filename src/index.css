@@ -176,21 +176,17 @@ li::marker {
   max-width: 300px;
   cursor: pointer;
   height: auto;
-  /* padding: 0 2em; */
   text-align: left;
 }
-
-/* .story-text-img:hover {
-  box-shadow: 0 0 3px 1px black;
-} */
 
 .stories-img {
   max-width: 300px;
   height: auto;
 }
 
-.monkeyland-nutshell {
-  width: 300px;
+.monkeyland-pic {
+  max-width: 300px;
+  padding: 1em 0;
 }
 
 .about {
@@ -260,6 +256,10 @@ li::marker {
   .hero-app-vid {
     padding-left: 0;
   }
+
+  .monkeyland-pic {
+    max-width: 300px;
+  }
 }
 
 @media (min-width: 767px) {
@@ -271,7 +271,15 @@ li::marker {
     max-width: 600px;
   }
 
+  .hero-app-heading {
+    text-align: center;
+  }
+
   .hero-app-desc {
+    max-width: 790px;
+  }
+
+  .writing-desc {
     max-width: 790px;
   }
 }
