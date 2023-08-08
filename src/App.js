@@ -11,27 +11,6 @@ import dronesText from "./drones-writing.png";
 import "./App.css";
 
 function App() {
-  const [monkeylandInfo, setMonkeylandInfo] = useState(false);
-
-  // function toggleStory() {
-  //   setMonkeylandInfo((prevStoryInfo) => !prevStoryInfo);
-  // }
-
-  const [hovered, setHovered] = useState(false);
-
-  const hoverStyle = {
-    // boxShadow: hovered ? "0 0 1px 1px #000" : "0 0 0 0 #FFF",
-    opacity: hovered ? 0.8 : 1,
-  };
-
-  const hoverMouseEnter = () => {
-    setHovered(true);
-  };
-
-  const hoverMouseLeave = () => {
-    setHovered(false);
-  };
-
   const skillsRef = useRef(null);
   const mainRef = useRef(null);
 
