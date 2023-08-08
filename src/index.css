@@ -77,13 +77,15 @@ li::marker {
 
 .skills-nav {
   font-size: 0.9em;
-  padding-right: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
   cursor: pointer;
 }
 
 .projects-nav {
   font-size: 0.9em;
-  padding-right: 2em;
+  cursor: pointer;
+  /* padding-right: 2em; */
 }
 
 .header {
@@ -136,7 +138,7 @@ li::marker {
   max-width: 25px;
 }
 
-.hero-app-desc {
+.hero-app-text {
   max-width: 500px;
   text-align: left;
 }
@@ -156,38 +158,29 @@ li::marker {
 
 .writing-and-strategy {
   padding: 1em 1em;
+  max-width: 100%;
 }
 
-.writing-desc {
+.writing-text {
   max-width: 500px;
   text-align: left;
   padding: 0 1em;
 }
 
-.stories-project {
-  /* padding-left: 1em; */
+.drones-project {
+  padding: 1em 0;
 }
 
-.story-heading {
-  /* padding: 0.5em 1em; */
-}
-
-.short-stories-text {
-  max-width: 500px;
-  text-align: left;
-  padding: 0 1em;
-}
-
-/* .story-text-img {
+.drones-project-imgs {
   max-width: 300px;
   cursor: pointer;
-  height: auto;
-  text-align: left;
-} */
-
-.stories-project-img {
-  max-width: 300px;
   padding: 1em 0;
+}
+
+.drones-project-text {
+  max-width: 500px;
+  text-align: left;
+  padding: 0 1em;
 }
 
 .monkeyland-img {
@@ -199,6 +192,21 @@ li::marker {
   max-width: 500px;
   padding: 0 1em;
   text-align: left;
+}
+
+.stories-project-heading {
+  padding-top: 1em;
+}
+
+.stories-project-text {
+  max-width: 500px;
+  text-align: left;
+  padding: 0 1em;
+}
+
+.stories-project-img {
+  max-width: 300px;
+  padding: 1em 0;
 }
 
 .about {
@@ -283,19 +291,23 @@ li::marker {
     text-align: center;
   }
 
-  .hero-app-desc {
+  .hero-app-text {
     max-width: 780px;
   }
 
-  .writing-info {
-    padding: 1em 0;
-  }
-
-  .writing-desc {
+  .writing-text {
     max-width: 780px;
     padding: 1em 0;
   }
 
+  .drones-project {
+    padding: 1em 0;
+  }
+
+  .drones-project-text {
+    max-width: 780px;
+    text-align: left;
+  }
   .stories-project {
     padding: 1em 0;
   }
@@ -328,6 +340,13 @@ li::marker {
     padding-right: 3em;
   }
 
+  .frontend-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0;
+  }
+
   .hero-app {
     display: grid;
     grid-template-rows: 3;
@@ -337,9 +356,10 @@ li::marker {
 
   .hero-app-heading {
     grid-area: 1/1/1/2;
+    text-align: left;
   }
 
-  .hero-app-desc {
+  .hero-app-text {
     grid-area: 2/1/3/2;
     max-width: 25em;
     align-self: center;
@@ -358,29 +378,30 @@ li::marker {
     padding: 1em 0;
   }
 
-  .writing-desc {
+  .writing-text {
     padding: 1em 0em;
   }
 
-  .stories-project {
+  .drones-project {
     display: grid;
     grid-template-rows: 3;
     grid-template-columns: 4;
-    padding: 1em 1em;
+    padding: 2em 1em;
   }
 
-  .stories-project-heading {
+  .drones-project-heading {
     grid-area: 1/1/1/2;
+    text-align: left;
   }
 
-  .stories-project-text {
+  .drones-project-text {
     grid-area: 2/1/3/2;
     max-width: 25em;
-    padding: 3em 1em;
     align-self: center;
+    padding: 0 0.5em;
   }
 
-  .stories-project-img {
+  .drones-project-imgs {
     grid-area: 2/3/3/4;
     max-width: 30em;
   }
@@ -394,6 +415,7 @@ li::marker {
 
   .monkeyland-heading {
     grid-area: 1/1/1/2;
+    text-align: left;
   }
 
   .monkeyland-text {
@@ -403,6 +425,30 @@ li::marker {
   }
 
   .monkeyland-img {
+    grid-area: 2/3/3/4;
+    max-width: 30em;
+  }
+
+  .stories-project {
+    display: grid;
+    grid-template-rows: 3;
+    grid-template-columns: 4;
+    padding: 1em 1em;
+  }
+
+  .stories-project-heading {
+    grid-area: 1/1/1/2;
+    text-align: left;
+  }
+
+  .stories-project-text {
+    grid-area: 2/1/3/2;
+    max-width: 25em;
+    padding: 3em 1em;
+    align-self: center;
+  }
+
+  .stories-project-img {
     grid-area: 2/3/3/4;
     max-width: 30em;
   }

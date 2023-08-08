@@ -6,6 +6,8 @@ import picOpt2 from "./picOpt2.jpg";
 import monkeylandImg from "./monkeyland-pic.jpg";
 import shortStories from "./shortStories.jpeg";
 import reactLogoSmall from "./react-logo-small.png";
+import dronesImg from "./drones.png";
+import dronesText from "./drones-writing.png";
 import "./App.css";
 
 function App() {
@@ -32,6 +34,12 @@ function App() {
 
   const skillsRef = useRef(null);
   const mainRef = useRef(null);
+
+  const [dronesWriting, setDronesWriting] = useState(false);
+
+  const handleDronesClick = () => {
+    setDronesWriting(!dronesWriting);
+  };
 
   return (
     <div className="App">
@@ -69,8 +77,6 @@ function App() {
               Github
             </a>
           </h5>
-        </div>
-        <div className="skills-and-projects-nav">
           <h6
             className="skills-nav"
             onClick={() => {
@@ -101,9 +107,11 @@ function App() {
         <h4 className="like-coding">But I like coding and writing</h4>
         <img className="prof-pic" src={picOpt2} alt="" />
         <p className="bio">
-          I’m a frontend developer and copywriter. I’ve worked as a strategist
-          and have a certificate in user-centred design, where my strength is in
-          information architecture.
+          I’m a frontend developer and copywriter. I’ve freelanced in
+          copywriting and strategy for the better part of four years, have a
+          certificate in user-centred design and I love building things – be
+          they apps, campaigns or stories. I grew up in a small, coastal South
+          African town and last year moved to Switzerland.
         </p>
       </header>
       <main className="main">
@@ -116,7 +124,7 @@ function App() {
               <source src={heroAppVid} type="video/mp4" />
               Video tag not supported by browser
             </video>
-            <p className="hero-app-desc">
+            <p className="hero-app-text">
               This project allows users to create a hero through form selections
               and text inputs. Options synergise differently and final values,
               such as health, are calculated using a number of variables. Heroes
@@ -148,30 +156,46 @@ function App() {
         <section className="writing-and-strategy">
           <article className="writing-intro">
             <h2 className="writing-heading">Strategy & Copywriting</h2>
-            <p className="writing-desc">
-              One of my strengths I value most is storytelling. No story exists
-              in isolation – they rely on past stories, needing to understand
-              and engage with them in order to be effectively communicated as
-              they act in concert with the narratives around them. Strategy lays
-              the foundation and is the driving force behind potent and
-              insightful communication.
+            <p className="writing-text">
+              As a creative and perceptive person with an appreciation for
+              well-developed concepts, as well as the finer details of writing,
+              I write insightful work that remains true to an overarching
+              narrative, however loosely defined or informal that narrative may
+              be. This is important because no story exists in isolation – they
+              rely on past stories, needing to understand and engage with them
+              in order to be effective as they act in concert with the
+              narratives around them. Storytelling is one of my strengths I
+              value most and as a copywriter it is an invaluable tool.
             </p>
           </article>
-          <article className="stories-project">
-            <h4 className="stories-project-heading">
-              There's Always Time For a Short Story
+          <article className="drones-project">
+            <h4 className="drones-project-heading">
+              DSV - Towards Zero & more
             </h4>
-            <img className="stories-project-img" src={shortStories} alt="" />
-            <p className="stories-project-text">
-              This Red & Yellow brief charged us with developing a promotional
-              event for Exclusive Books. People often wish that they read more
-              and one of the common issues faced is a shortage of time. We
-              realised short stories – in truth these are vignettes – can be
-              read quickly and in any setting. During the promotion, stories
-              were placed around the mall - on receipts, in elevators, and on
-              limited edition packets.
+            <img
+              className="drones-project-imgs"
+              src={dronesWriting ? dronesText : dronesImg}
+              alt=""
+              onClick={handleDronesClick}
+            />
+            <p className="drones-project-text">
+              As one of the top global transport and logistics companies, much
+              of the work I’ve done for DSV, through Serious Moonlight
+              Consulting, focusses on technology and innovation. This ad
+              showcases their use of drones as they progress towards ‘zero-error
+              warehousing’. Other work I’ve done for DSV includes transcribing
+              and editing these{" "}
+              <a
+                href="https://www.dsv.com/en-za/careers/employee-testimonials"
+                target="_blank"
+                rel="noreferrer"
+              >
+                employee testimonials
+              </a>
+              .
             </p>
           </article>
+
           <article className="monkeyland">
             <h4 className="monkeyland-heading">
               Copy editing for Monkeyland Primate Sanctuary
@@ -207,6 +231,21 @@ function App() {
               .
             </p>
           </article>
+          <article className="stories-project">
+            <h4 className="stories-project-heading">
+              There's Always Time For a Short Story
+            </h4>
+            <img className="stories-project-img" src={shortStories} alt="" />
+            <p className="stories-project-text">
+              This Red & Yellow project charged us with developing a promotional
+              event for Exclusive Books. People often wish that they read more
+              and one of the common issues faced is a shortage of time. We
+              realised short stories – in truth these are vignettes – can be
+              read quickly and in any setting. During the promotion, stories
+              were placed around the mall - on receipts, in elevators, and on
+              limited edition packets.
+            </p>
+          </article>
         </section>
 
         <section className="about" ref={skillsRef}>
@@ -225,9 +264,9 @@ function App() {
             <ul className="skills-list">
               <li>Strategy</li>
               <li>Concept development</li>
-              <li>Information architecture</li>
               <li>Public-facing communication</li>
               <li>Intra-business communication</li>
+              <li>Information architecture</li>
             </ul>
           </article>
           <article className="experience">
