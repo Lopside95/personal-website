@@ -1,15 +1,22 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.393b9160.css",
-    "main.js": "/personal-website/static/js/main.71d261cc.js",
+    "main.css": "/personal-website/static/css/main.885a68a2.css",
+    "main.js": "/personal-website/static/js/main.fedff79e.js",
     "static/js/787.5809834d.chunk.js": "/personal-website/static/js/787.5809834d.chunk.js",
+    "static/media/heroAppVid.mp4": "/personal-website/static/media/heroAppVid.f73b1addf0433db18059.mp4",
+    "static/media/shortStories.jpeg": "/personal-website/static/media/shortStories.1bdb4582a1550dece263.jpeg",
+    "static/media/drones.png": "/personal-website/static/media/drones.fce2c3a1f314447ce5dc.png",
+    "static/media/picOpt2.jpg": "/personal-website/static/media/picOpt2.bda943b5b1ce01f5586e.jpg",
+    "static/media/monkeyland-pic.jpg": "/personal-website/static/media/monkeyland-pic.4637fb9371523c14d229.jpg",
+    "static/media/cvPicture.jpg": "/personal-website/static/media/cvPicture.1e318011c087a916466e.jpg",
+    "static/media/drones-writing.png": "/personal-website/static/media/drones-writing.e9a9e006ac52bfebbd65.png",
     "index.html": "/personal-website/index.html",
-    "main.393b9160.css.map": "/personal-website/static/css/main.393b9160.css.map",
-    "main.71d261cc.js.map": "/personal-website/static/js/main.71d261cc.js.map",
+    "main.885a68a2.css.map": "/personal-website/static/css/main.885a68a2.css.map",
+    "main.fedff79e.js.map": "/personal-website/static/js/main.fedff79e.js.map",
     "787.5809834d.chunk.js.map": "/personal-website/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.393b9160.css",
-    "static/js/main.71d261cc.js"
+    "static/css/main.885a68a2.css",
+    "static/js/main.fedff79e.js"
   ]
 }
