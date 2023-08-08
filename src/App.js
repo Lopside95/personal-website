@@ -1,24 +1,25 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import cvPicture from "./cvPicture.jpg";
 import heroAppVid from "./heroAppVid.mp4";
 import picOpt2 from "./picOpt2.jpg";
-import monkeylandPic from "./monkeyland-pic.jpg";
+import monkeylandImg from "./monkeyland-pic.jpg";
 import shortStories from "./shortStories.jpeg";
+import reactLogoSmall from "./react-logo-small.png";
 import "./App.css";
 
 function App() {
-  const [storyInfo, setStoryInfo] = useState(false);
+  const [monkeylandInfo, setMonkeylandInfo] = useState(false);
 
-  function toggleStory() {
-    setStoryInfo((prevStoryInfo) => !prevStoryInfo);
-  }
+  // function toggleStory() {
+  //   setMonkeylandInfo((prevStoryInfo) => !prevStoryInfo);
+  // }
 
   const [hovered, setHovered] = useState(false);
 
   const hoverStyle = {
-    boxShadow: hovered ? "0 0 1px 1px #000" : "0 0 0 0 #FFF",
-    // opacity: hovered ? 0.8 : 1,
+    // boxShadow: hovered ? "0 0 1px 1px #000" : "0 0 0 0 #FFF",
+    opacity: hovered ? 0.8 : 1,
   };
 
   const hoverMouseEnter = () => {
@@ -28,6 +29,9 @@ function App() {
   const hoverMouseLeave = () => {
     setHovered(false);
   };
+
+  const skillsRef = useRef(null);
+  const mainRef = useRef(null);
 
   return (
     <div className="App">
@@ -66,17 +70,33 @@ function App() {
             </a>
           </h5>
         </div>
-        <div className="dev-and-writer">
-          <h6 className="dev-nav">Developer</h6>
-          <h6 className="writer-nav">Copywriter</h6>
+        <div className="skills-and-projects-nav">
+          <h6
+            className="skills-nav"
+            onClick={() => {
+              skillsRef.current.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            Skills
+          </h6>
+          <h6
+            className="projects-nav"
+            onClick={() => {
+              mainRef.current.scrollIntoView({
+                behavior: "smooth",
+              });
+            }}
+          >
+            Projects
+          </h6>
         </div>
       </div>
       <header className="header">
         <p className="header-text">
           My feelings toward long walks on the beach are varied and
           inconclusive.
-          <br /> It’s been several years since I ate an olive and I don’t like
-          horror movies.
+          <br /> It’s been several years since I watched a horror film and I
+          don't like olives.
         </p>
         <h4 className="like-coding">But I like coding and writing</h4>
         <img className="prof-pic" src={picOpt2} alt="" />
@@ -87,10 +107,15 @@ function App() {
         </p>
       </header>
       <main className="main">
-        <section className="dev-projects">
-          <h2 className="projects-heading">Projects</h2>
+        <section className="dev-projects" ref={mainRef}>
+          <h2 className="frontend-heading">Frontend Development</h2>
           <article className="hero-app">
             <h3 className="hero-app-heading">Hero Builder</h3>
+
+            <video controls className="hero-app-vid">
+              <source src={heroAppVid} type="video/mp4" />
+              Video tag not supported by browser
+            </video>
             <p className="hero-app-desc">
               This project allows users to create a hero through form selections
               and text inputs. Options synergise differently and final values,
@@ -115,10 +140,6 @@ function App() {
                 here.
               </a>
             </p>
-            <video controls className="hero-app-vid">
-              <source src={heroAppVid} type="video/mp4" />
-              Video tag not supported by browser
-            </video>
           </article>
         </section>
 
@@ -137,62 +158,58 @@ function App() {
             </p>
           </article>
           <article className="stories-project">
-            <h3 className="story-heading">
+            <h4 className="stories-project-heading">
               There's Always Time For a Short Story
-            </h3>
-            <div
-              className="story-text-img"
-              onClick={toggleStory}
-              onMouseEnter={hoverMouseEnter}
-              onMouseLeave={hoverMouseLeave}
-              style={hoverStyle}
-            >
-              {storyInfo ? (
-                <p className="story-text">
-                  The brief charged us with developing a promotional event for
-                  Exclusive Books. People often wish that they read more and one
-                  of the common issues faced is a shortage of time. We realised
-                  short stories – in truth these are vignettes – can be read
-                  quickly and in any setting. During the promotion, stories were
-                  placed around the mall - on receipts, in elevators, and on
-                  limited edition packets.
-                </p>
-              ) : (
-                <img className="stories-img" src={shortStories} alt="" />
-              )}
-            </div>
+            </h4>
+            <img className="stories-project-img" src={shortStories} alt="" />
+            <p className="stories-project-text">
+              This Red & Yellow brief charged us with developing a promotional
+              event for Exclusive Books. People often wish that they read more
+              and one of the common issues faced is a shortage of time. We
+              realised short stories – in truth these are vignettes – can be
+              read quickly and in any setting. During the promotion, stories
+              were placed around the mall - on receipts, in elevators, and on
+              limited edition packets.
+            </p>
+          </article>
+          <article className="monkeyland">
+            <h4 className="monkeyland-heading">
+              Copy editing for Monkeyland Primate Sanctuary
+            </h4>
+            <img className="monkeyland-img" src={monkeylandImg} alt="" />
+
+            <p className="monkeyland-text">
+              Monkeyland is a free-roaming primate sanctuary in South Africa. It
+              covers a 12-hectare section of forest in which primates rescued
+              from labs, zoos, and households into which they were unwisely
+              taken as pets and subsequently surrendered, are given new lives.
+              Edited bodies of text include
+              <a
+                className="nutshell"
+                href="https://www.monkeyland.co.za/page/monkeyland-in-a-nutshell"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {" "}
+                {""}
+                Monkeyland In A Nutshell
+              </a>
+              {""} and {""}
+              <a
+                className="vision"
+                href="https://www.monkeyland.co.za/page/our-vision"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {" "}
+                Our Vision
+              </a>
+              .
+            </p>
           </article>
         </section>
-        <article className="monkeyland">
-          <h4>Copy editing for Monkeyland Primate Sanctuary</h4>
-          <img className="monkeyland-pic" src={monkeylandPic} alt=""></img>
-          <p className="monkeyland-links">
-            Edited bodies of text on the Monkeyland website. These include
-            <a
-              className="nutshell"
-              href="https://www.monkeyland.co.za/page/monkeyland-in-a-nutshell"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {" "}
-              {""}
-              Monkeyland In A Nutshell
-            </a>
-            {""} and {""}
-            <a
-              className="vision"
-              href="https://www.monkeyland.co.za/page/our-vision"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {" "}
-              Our Vision
-            </a>
-            .
-          </p>
-        </article>
 
-        <section className="about">
+        <section className="about" ref={skillsRef}>
           <article className="tech">
             <h3 className="tech-heading">Technologies</h3>
             <ul className="tech-list">
@@ -209,7 +226,7 @@ function App() {
               <li>Strategy</li>
               <li>Concept development</li>
               <li>Information architecture</li>
-              <li>Client-facing communication</li>
+              <li>Public-facing communication</li>
               <li>Intra-business communication</li>
             </ul>
           </article>
@@ -221,8 +238,7 @@ function App() {
                 January 2020 - present
               </li>
               <li>
-                Copy Editor | Monkeyland Primate Sanctuary <br /> August -
-                September 2020
+                Copy Editor | Monkeyland Primate Sanctuary <br /> August 2020
               </li>
               <li>
                 Tour Guide | Monkeyland Primate Sanctuary <br />
